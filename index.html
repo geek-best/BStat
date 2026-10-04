@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trophées du joueur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>🏆 Trophées du joueur</h1>
+    <p class="sub">Entre un tag joueur pour voir son pseudo et ses trophées.</p>
+
+    <form id="form">
+      <input id="tag" type="text" placeholder="#2PP0YQ9L" autocomplete="off" required>
+      <button type="submit">Rechercher</button>
+    </form>
+
+    <div id="result" class="result" hidden>
+      <div class="row"><span>Pseudo</span><strong id="name"></strong></div>
+      <div class="row"><span>Trophées</span><strong id="trophies"></strong></div>
+    </div>
+    <p id="error" class="error" hidden></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
